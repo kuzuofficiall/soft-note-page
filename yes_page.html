@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+  <title>Biliyordum!</title>
+  <link rel="stylesheet" href="yes_style.css" />
+  <script>
+    if (sessionStorage.getItem("leylaYes") !== "1") {
+      window.location.replace("index.html");
+    } else {
+      sessionStorage.removeItem("leylaYes");
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1 class="header_text">
+      Evet diyeceğini biliyordumm!<br />
+      Teşekkür ederimm &lt;3
+    </h1>
+    <p class="sub_text">Bugün buluşuyoruz, Leylam.</p>
+    <div class="gif_container">
+      <img
+        src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmo3c3l5ODh3ZGN6NHhhaDE2Mjg1ZjkwOXczdDFxbWM3dTBtaW9zaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/9XY4f3FgFTT4QlaYqa/giphy.gif"
+        alt="Sarılma"
+      />
+    </div>
+    <a class="replay" href="index.html">Bir daha göster</a>
+  </div>
+</body>
+</html>
